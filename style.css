@@ -326,3 +326,24 @@ span {
   margin-top: 8px;
   background-color: var(--color-dark-white);
 }
+#contact {
+  background-color: var(--color-pink);
+}
+.contact__title,
+.contact__email,
+.contact__links i,
+.contact__rights {
+  color: var(--color-white);
+}
+
+.contact__title {
+  margin: 32px 0;
+}
+.contact__links i {
+  font-size: var(--font-large);
+  margin: 24px 0;
+  padding: 0 10px;
+}
+.contact__links i:hover {
+  transform: scale(1.1);
+}
