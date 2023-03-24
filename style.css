@@ -156,7 +156,7 @@ button {
   color: var();
 } */
 
-.home_contact {
+.home__contact {
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
   margin: 24px;
