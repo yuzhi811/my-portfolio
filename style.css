@@ -97,6 +97,8 @@ button {
   position: fixed;
   /* q부모 위로 나와서 너비가 100이 아니게 됨. 컨텐트 크기만큼 측정*/
   width: 100%;
+  /* 무조건 위에 있어야 */
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
