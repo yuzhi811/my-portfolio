@@ -94,11 +94,21 @@ button {
 }
 /* Navbar */
 #navbar {
+  position: fixed;
+  /* q부모 위로 나와서 너비가 100이 아니게 됨. 컨텐트 크기만큼 측정*/
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-pink);
   align-items: center;
   padding: 16px;
+  /* navbar 효과 주기 */
+  background-color: transparent;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-dark-pink);
+  padding: 8px;
+  transition: all var(--animation-duration) ease-in-out;
 }
 
 .navbar__logo {
@@ -137,6 +147,7 @@ button {
 #home {
   background: url("images/home-background.png") center/cover;
   padding: 40px;
+  padding-top: 120px;
 }
 
 /* .home_title,.home_description {
