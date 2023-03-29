@@ -1,6 +1,7 @@
 "use strict";
 
 //Make navbar transparent when it is on the top
+//scrolling 시 navbar의 height만큼 내려갔을 때 navbar를 변경
 const navbar = document.querySelector("#navbar");
 const navbarHeight = navbar.getBoundingClientRect().height;
 document.addEventListener("scroll", () => {
@@ -42,6 +43,22 @@ const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener("scroll", () => {
   //console.log(1 - window.scrollY / homeHeight);
   home.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
+//Show arrow up button when scrolling down
+const arrow = document.querySelector(".arrow-up");
+document.addEventListener("scroll", () => {
+  //console.log(window.scrollY);
+  //console.log(navbarHeight);
+  if (window.scrollY > homeHeight / 2) {
+    arrow.classList.add("visible");
+  } else {
+    arrow.classList.remove("visible");
+  }
+});
+
+arrow.addEventListener("click", () => {
+  scrollIntoViews("#home");
 });
 
 //Utility Function
