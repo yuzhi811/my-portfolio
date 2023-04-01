@@ -95,7 +95,7 @@ button {
 /* Navbar */
 #navbar {
   position: fixed;
-  /* q부모 위로 나와서 너비가 100이 아니게 됨. 컨텐트 크기만큼 측정*/
+  /* 부모 위로 나와서 너비가 100이 아니게 됨. 컨텐트 크기만큼 측정*/
   width: 100%;
   /* 무조건 위에 있어야 */
   z-index: 1;
@@ -125,15 +125,20 @@ button {
   padding: 8px 12px;
   margin: 0 4px;
   cursor: pointer;
+  /* color: var(--color-white); */
+  border: 1px solid transparent;
   border-radius: var(--size-border-radius);
 }
 
-.navbar__menu__item.active {
+/* .navbar__menu__item.active {
   border: 1px solid var(--color-white);
-}
+} */
 
 .navbar__menu__item:hover {
+  /* border: 1px solid var(--color-white); */
+  border-color: var(--color-white);
   background-color: var(--color-dark-pink);
+  /* border-radius: var(--size-border-radius); */
 }
 /* 기존 자리에서 빠져나와 포지션 위치-absolute */
 .navbar__toggle-btn {
@@ -147,7 +152,7 @@ button {
 
 /* Home */
 #home {
-  background: url("images/home-background.png") center/cover;
+  background: no-repeat url("images/home-background.png") center/cover;
   padding: 40px;
   padding-top: 120px;
 }
@@ -204,7 +209,9 @@ button {
   color: var(--color-pink);
   transform: rotate(-30deg) scale(1.1);
 }
-
+.major__title {
+  font-weight: var(--weight-bold);
+}
 .major__title,
 .major__description {
   color: var(--color-dark-grey);
@@ -218,15 +225,19 @@ button {
 .school {
   display: flex;
 }
+.school__name {
+  font-weight: var(--weight-bold);
+}
 
 .school img {
   display: flex;
   width: 50px;
   height: 50px;
-  line-height: 50px;
+  margin-top: 40px;
 }
 .school_description {
-  margin: 16px;
+  margin: 24px;
+  text-align: left;
 }
 
 /* Skills */
@@ -331,9 +342,11 @@ button {
   opacity: 0.8;
   transform: translateY(0px);
 }
-.project_description h3,
-span {
+.project_description span {
   color: var(--color-white);
+}
+.project_description h3 {
+  color: var(--color-orange);
 }
 
 /* 구분선 추가하기 */
@@ -342,9 +355,10 @@ span {
   display: block;
   position: relative;
   left: 50%;
-  width: 25px;
+  width: 50px;
   height: 2px;
-  margin-left: -12px;
+  /* margin-left: -12px; */
+  transform: translateX(-50%);
   margin-top: 8px;
   background-color: var(--color-dark-white);
 }
@@ -401,6 +415,7 @@ span {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-dark-pink);
   }
   .navbar__menu {
     flex-direction: column;
@@ -409,6 +424,13 @@ span {
     display: none;
   }
 
+  #navbar.navbar--dark {
+    padding: 16px;
+  }
+
+  .navbar__menu.open {
+    display: block;
+  }
   .about__majors {
     flex-direction: column;
   }
