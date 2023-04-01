@@ -153,8 +153,10 @@ button {
 /* Home */
 #home {
   background: no-repeat url("images/home-background.png") center/cover;
-  padding: 40px;
-  padding-top: 120px;
+  /* background-size: ; */
+  padding: 70px;
+  padding-top: 150px;
+  text-align: center;
 }
 
 /* .home_title,.home_description {
