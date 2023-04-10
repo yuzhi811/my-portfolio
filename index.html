@@ -14,6 +14,7 @@
       src="https://kit.fontawesome.com/e816252b6a.js"
       crossorigin="anonymous"
     ></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,10 +28,10 @@
     <!-- Navbar -->
     <nav id="navbar">
       <div class="navbar__logo">
-        <!-- <img src="images/favicon.png" alt="logo" /> -->
-        <!-- <i class="fa-solid fa-star-of-life"></i> -->
-
-        <a href="#"> <i class="fa-solid fa-y"></i></a>
+        <a href="#">
+         <i class="fa-solid fa-star-of-life"></i>
+            Yeji
+         </a>
       </div>
       
         <ul class="navbar__menu">
@@ -55,34 +56,18 @@
           Hi, <br />
           I am Yeji Yoon
         </h1>
-        <h3 class="home__description">
-          A Web Developer currently residing in Ottawa, Canada
-        </h3>
+        <h2 class="home__description">
+          A highly motivated web developer currently residing in Ottawa, Canada
+        </h2>
+        
         <button class="home__contact">Contact Me</button>
       </div>
     </section>
     <!-- About -->
     <section id="about" class="section section__container">
       <h1>About Me</h1>
-      <p>어떤 공부를 했고 무엇을 배웠는지 등.. 나를 어필할 수 있는 문장 2-3</p>
-      <div class="about__majors">
-        <div class="major">
-          <div class="major__icon"><i class="fa-brands fa-html5"></i></div>
-          <h3 class="major__title">Front-end</h3>
-          <div class="major__description">HTML, CSS, Javascript,</div>
-        </div>
-        <!-- Back-end -->
-        <div class="major">
-          <div class="major__icon"><i class="fa-brands fa-html5"></i></div>
-          <h3 class="major__title">Back-end</h3>
-          <div class="major__description">HTML, CSS, Javascript,</div>
-        </div>
-        <!-- Database -->
-        <div class="major">
-          <div class="major__icon"><i class="fa-brands fa-html5"></i></div>
-          <h3 class="major__title">Database</h3>
-          <div class="major__description">HTML, CSS, Javascript,</div>
-        </div>
+      <h3 class="intro">I am currently studying Web Development and Internet Applications at Algonquin college, where I am improving my skills in creating dynamic and user-friendly websites with sleek and sensible design. <br /> I thrive on learning and staying up-to-date with the latest trends in web development. </h2>
+     
       </div>
       <!-- school -->
       <div class="about__schools">
@@ -100,7 +85,7 @@
           <img src="images/schools/ss_logo.png" alt="Sungshin" />
           <div class="school_description">
             <p class="school__name">Sungshin Women's University</p>
-            <p class="school__program">Consumer Science / Economics</p>
+            <p class="school__program">Consumer Science and Living Culture Industry </p> <p>Economics</p>
             <p class="school_period">2017 Mar - 2022 Feb</p>
           </div>
         </div>
@@ -108,7 +93,52 @@
     </section>
     <!-- Skills -->
     <section id="skills" class="section">
-      <div class="section__container">
+      <h1>Skills</h1>
+      <div class="about__majors">
+        <div class="major">
+          <!-- <i class="fa-brands fa-html5"></i> -->
+          <div class="major__icon">
+            <img src="images/languages/html5.png" alt="">
+            <img src="images/languages/css3.png" alt="">
+            <img src="images/languages/sass.png" alt="">
+            <img src="images/languages/photoshop.png" alt="">
+            <img src="images/languages/illustrator.png" alt="">
+            <img src="images/languages/adobeXD.png" alt="">
+            <img src="images/languages/figma.png" alt="">
+          </div>
+          <h3 class="major__title">Web Design</h3>
+          <div class="major__description">HTML, CSS, SASS, Adobe XD, Adobe Photoshop, Adobe Illustrator, Figma</div>
+          <div class="major__description">▲ Related courses: Cross-Platform Web Design | Graphics Technologies</div>
+        </div>
+        <!-- Languages & Libraries -->
+        <div class="major">
+          <div class="major__icon">
+          <img src="images/languages/javascript.png" alt="">
+          <img src="images/languages/jquery.png" alt="">
+        <img src="images/languages/python.png" alt="">
+        <img src="images/languages/csharp.png" alt="">
+        <img src="images/languages/asp.png" alt="">
+        <img src="images/languages/mysql.png" alt="">
+        <img src="images/languages/react.png" alt="">
+      </div>
+          <h3 class="major__title">Languages & Libraries</h3>
+          <div class="major__description">Javascript, jQuery, Python, C#, ASP.NET, SQL</div>
+          <div class="major__description">▲ Related courses: Web Programming I | Database System and Concepts | Introduction Computer Programming Using Python | Database Design and Administration | Web Programming II</div>
+        </div>
+        
+        <!-- Operating Systems -->
+        <div class="major">
+          <div class="major__icon">
+          <img src="images/languages/windows.png" alt="">
+        <img src="images/languages/linux.png" alt="">
+        </div>
+          <h3 class="major__title">Network Systems</h3>
+          <div class="major__description">Windows, Linux</div>
+          
+          <div class="major__description">▲ Related course: Network Operating Systems</div>
+        </div>
+      </div>
+      <!-- <div class="section__container">
         <h1>Skills</h1>
         <div class="skillset">
           <div class="skillset__left">
@@ -196,7 +226,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
     <!-- Work -->
     <section id="work" class="section">
@@ -205,6 +235,22 @@
         <h1>Projects</h1>
         <div class="work__projects">
           <!-- pj 1 -->
+          <a href="https://github.com/yuzhi811/crossplatform-lab/tree/main/project" class="project" target="blank">
+            <img
+              src="images/projects/prj_webdesign_ass1.jpg"
+              alt="webdesign_ass#1"
+              class="project__img"
+            />
+            <div class="project_description">
+              <h3>The scent of everyday life</h3>
+              <span
+                >First assignment to build my own business website responsively. Using HTML, CSS, Javascript</span
+              >
+            </div>
+          </a>
+         
+  
+          <!-- pj 2 -->
           <a
             href="https://github.com/yuzhi811/validation-form"
             class="project"
@@ -217,26 +263,9 @@
             />
             <!-- hover시 description이 보이도록 -->
             <div class="project_description">
-              <h3>Validation Form</h3>
+              <h3>Shopping Cart With Validation Form</h3>
               <span
-                >Final assignment in Javascript. class, validation, session
-                storage, json</span
-              >
-            </div>
-          </a>
-  
-          <!-- pj 2 -->
-          <a href="https://github.com/yuzhi811/" class="project" target="blank">
-            <img
-              src="images/projects/prj_webdesign_ass1.jpg"
-              alt="webdesign_ass#1"
-              class="project__img"
-            />
-            <div class="project_description">
-              <h3>My Dream Website</h3>
-              <span
-                >Final assignment in Javascript. class, validation, session
-                storage, json</span
+                >Final assignment in Web programing Ⅰ by using Javascript, json.</span
               >
             </div>
           </a>
@@ -249,58 +278,54 @@
               class="project__img"
             />
             <div class="project_description">
-              <h3>Validation Form</h3>
+              <h3>Exprore Ontario</h3>
               <span
-                >Final assignment in Javascript. class, validation, session
-                storage, json</span
+                >Group project in Cross-platform web design. Being in a charge of providing user with weather information through API</span
               >
             </div>
           </a>
   
           <!-- pj 4 -->
-          <a href="" class="project" target="blank">
+          <a href="https://github.com/yuzhi811/2022-js-frontend-class/tree/main/rock_paper_scissors_review" class="project" target="blank">
             <img
               src="images/projects/prj_rspgame.jpg"
-              alt="validation-form"
+              alt="rspgame"
               class="project__img"
             />
             <div class="project_description">
-              <h3>Validation Form</h3>
+              <h3>Rock Scissors Paper Game</h3>
               <span
-                >Final assignment in Javascript. class, validation, session
-                storage, json</span
+                >Created a mini rock scissors paper game with Javascript</span
               >
             </div>
           </a>
   
           <!-- pj 5 -->
-          <a href="" class="project" target="blank">
+          <a href="https://github.com/yuzhi811/Dice-Game" class="project" target="blank">
             <img
               src="images/projects/prj_dicegame.jpg"
-              alt="validation-form"
+              alt="prj_dicegame"
               class="project__img"
             />
             <div class="project_description">
-              <h3>Validation Form</h3>
+              <h3>Dice Game</h3>
               <span
-                >Final assignment in Javascript. class, validation, session
-                storage, json</span
+                >Created a dice game with Javascript</span
               >
             </div>
           </a>
   
           <!-- pj 6 -->
-          <a href="" class="project" target="blank">
+          <a href="https://github.com/yuzhi811/crossplatform-lab/tree/main/lab5" class="project" target="blank">
             <img
               src="images/projects/prj_fluffycats.jpg"
-              alt="validation-form"
+              alt="prj_fluffycats"
               class="project__img"
             />
             <div class="project_description">
-              <h3>Validation Form</h3>
+              <h3>Fluffy Friends Cat Daycare</h3>
               <span
-                >Final assignment in Javascript. class, validation, session
-                storage, json</span
+                >Built a resonsive website with HTML, CSS and Javascript</span
               >
             </div>
           </a>
@@ -310,10 +335,10 @@
     <!-- Contact -->
     <section id="contact" class="section">
       <h1 class="contact__title">Contact</h1>
-      <h2 class="contact__email">yjyoon1301@gmail.com</h2>
+      <h2 class="contact__email">yoon0029@algonquinlive.com</h2>
       <div class="contact__links">
-        <a href="#"><i class="fa-brands fa-github"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="github.com/yuzhi811"><i class="fa-brands fa-github"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
       </div>
       <div class="contact__rights">Yeji Yoon - All rights reserved</div>
     </section>

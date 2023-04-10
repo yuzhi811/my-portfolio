@@ -73,5 +73,7 @@ arrow.addEventListener("click", () => {
 //Utility Function
 function scrollIntoViews(selector) {
   const scrollTo = document.querySelector(selector);
-  scrollTo.scrollIntoView({ behavior: "smooth" });
+  scrollTo.scrollIntoView({
+    behavior: "smooth",
+  });
 }
