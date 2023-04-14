@@ -470,6 +470,9 @@ button {
   }
   .navbar__toggle-btn {
     display: block;
+    top: 16px;
+    bottom: 16px;
+    font-size: var(--font-medium);
   }
   #navbar {
     flex-direction: column;
