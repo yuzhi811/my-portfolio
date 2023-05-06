@@ -360,7 +360,7 @@ button {
   width: 320px;
   height: 260px;
   margin: 2px;
-  background-color: var(--color-dark-white);
+  background-color: var(--color-light-white);
 }
 /* absolute: 원래 들어있던 박스에서 벗어나 위치를 바꾸는 것 (근접한 부모노드 중 기본값인 static을 쓰지 않는 부모를 찾아가게 됨 - 아무것도 지정 안돼있으면 body로.. 상위 부모를 relative로 지정해준다  */
 
